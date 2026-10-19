@@ -1,5 +1,5 @@
-import pygame
 from random import randint
+import pygame
 
 # Константы для размеров поля и сетки
 SCREEN_WIDTH, SCREEN_HEIGHT = 640, 480
@@ -165,8 +165,7 @@ def main():
         apple.draw(screen)
         snake.draw(screen)
 
-        # Разбита длинная строка, чтобы уложиться в 79 символов
-        title = f"Изгиб Питона | Длина змейки: {snake.length}"
+        title = f"Изгиб Питона | Длина: {snake.length}"
         pygame.display.set_caption(title)
 
         pygame.display.update()
